@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+
 
 export default function LandingPage() {
   return (
-    <div>
+    <main>
       {/* Hero Section */}
       <section className="relative overflow-hidden pb-16">
-        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center px-6 sm:px-8">
           
           {/* Left content */}
           <div className="text-center sm:text-left">
@@ -19,11 +20,9 @@ export default function LandingPage() {
             </div>
 
             <h1 className="mb-6 text-5xl sm:text-6xl md:text-7xl font-bold leading-[0.95] tracking-tight">
-              Discover &
-              <br />
-              create amazing
-              <br />
-              <span className="bg-linear-to-r from-blue-400 via-purple-400 to-orange-400 bg-clip-text text-transparent">
+              Discover &<br />
+              create amazing<br />
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-orange-400 bg-clip-text text-transparent">
                 events.
               </span>
             </h1>
@@ -33,27 +32,26 @@ export default function LandingPage() {
               memorable. Join our community today.
             </p>
 
-          <Link href="/explore">
-              <Button size="xl" className={"rounded-full"}>
+            <Button size="xl" asChild>
+              <Link href="/explore">
                 Get Started
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
 
           {/* Right - 3D Phone Mockup */}
-          <div className="relative block">
-            <Image
+          <div className="relative block w-full max-w-lg mx-auto">
+            {/* <Image
               src="/hero.png"
-              // src="/hero.gif"
-              alt="Event preview mockup"
+              alt="Preview of the Spott app showcasing events"
               width={700}
               height={700}
               className="w-full h-auto"
               priority
-            />
+            /> */}
 
-            {/* Optional video mockup (Kept exactly as you wrote it) */}
-            {/*
+            {/* Optional Video Mockup */}
+            
             <video
               width="100%"
               height="100%"
@@ -72,10 +70,10 @@ export default function LandingPage() {
                 type="video/webm"
               />
             </video>
-            */}
+           
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
