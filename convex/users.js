@@ -72,7 +72,7 @@ export const getCurrentUser = query({
 
     if (!user) {
       throw new Error("User not found");
-    }5
+    }
 
     return user;
   },

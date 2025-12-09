@@ -93,7 +93,7 @@ export default function ExplorePage() {
         <h1 className="text-5xl md:text-6xl font-bold mb-4">Discover Events</h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
           Explore featured events, find what&apos;s happening locally, or browse
-          events across India
+          events across Pakistan
         </p>
       </div>
 
