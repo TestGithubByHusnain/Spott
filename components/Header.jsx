@@ -12,7 +12,7 @@ import OnboardingModal from "./onboarding-modal";
 import SearchLocationBar from "./search-location-bar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-// import UpgradeModal from "./upgrade-modal";
+import UpgradeModal from "./Upgrade-modal";
 import { Badge } from "./ui/badge";
 
 export default function Header() {
@@ -131,11 +131,11 @@ export default function Header() {
         onComplete={handleOnboardingComplete}
       />
 
-      {/* <UpgradeModal
+      <UpgradeModal
         isOpen={showUpgradeModal}
         onClose={() => setShowUpgradeModal(false)}
         trigger="header"
-      /> */}
+      />
     </>
   );
 }
