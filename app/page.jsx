@@ -41,17 +41,17 @@ export default function LandingPage() {
 
           {/* Right - 3D Phone Mockup */}
           <div className="relative block w-full max-w-lg mx-auto">
-            {/* <Image
+            <Image
               src="/hero.png"
               alt="Preview of the Spott app showcasing events"
               width={700}
               height={700}
               className="w-full h-auto"
               priority
-            /> */}
+            />
 
             {/* Optional Video Mockup */}
-            
+{/*             
             <video
               width="100%"
               height="100%"
@@ -69,7 +69,7 @@ export default function LandingPage() {
                 src="https://cdn.lu.ma/landing/phone-dark.webm"
                 type="video/webm"
               />
-            </video>
+            </video> */}
            
           </div>
         </div>
