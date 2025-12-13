@@ -87,3 +87,6 @@ export const checkRegistration = query({
     return registration;
   },
 });
+
+
+

@@ -65,22 +65,33 @@ export default function EventDetailPage() {
     event?._id ? { eventId: event._id } : "skip"
   );
 
-  const handleShare = async () => {
-    const url = window.location.href;
+const handleShare = async () => {
+  const url = window.location.href;
 
-    if (navigator?.share) {
-      try {
-        await navigator.share({
-          title: event?.title,
-          text: event?.description?.slice(0, 100) + "...",
-          url,
-        });
-      } catch (_) {}
-    } else {
-      await navigator.clipboard.writeText(url);
-      toast.success("Link copied to clipboard!");
+  // Web Share API (Mobile + supported browsers)
+  if (typeof navigator !== "undefined" && navigator.share) {
+    try {
+      await navigator.share({
+        title: event?.title || "Event",
+        text: event?.description
+          ? event.description.slice(0, 100) + "..."
+          : "Check out this event",
+        url,
+      });
+      return;
+    } catch (err) {
+      // User cancelled or share failed → fallback to clipboard
     }
-  };
+  }
+  // Clipboard fallback
+  try {
+    await navigator.clipboard.writeText(url);
+    toast.success("Link copied to clipboard!");
+  } catch (err) {
+    toast.error("Failed to copy link");
+  }
+};
+
 
   const handleRegister = () => {
     if (!user) {
