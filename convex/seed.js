@@ -249,7 +249,7 @@ Tournament format:
 - 16 teams (5v5)
 - Single elimination bracket
 - Best of 3 matches
-- Prize pool: ₹50,000
+- Prize pool: Rs50,000
 - Live streaming on Twitch
 
 All skill levels welcome. Bring your own peripherals (mouse, headset). High-spec PCs and stable internet provided.
@@ -529,8 +529,8 @@ Tournament format:
 - Live commentary
 
 Prizes:
-- Winner: ₹1,00,000 + Trophy
-- Runner-up: ₹50,000
+- Winner: Rs1,00,000 + Trophy
+- Runner-up: Rs50,000
 - Best Batsman, Bowler & Player awards
 
 Register your company team (11 players + 4 substitutes). Individual registrations also open - we'll form mixed teams.
