@@ -112,7 +112,7 @@ export default function RegisterModal({ event, isOpen, onClose }) {
                 "Free Event"
               ) : (
                 <span>
-                  Price: ₹{event.ticketPrice}{" "}
+                  Price: Rs{event.ticketPrice}{" "}
                   <span className="text-xs">(Pay at venue)</span>
                 </span>
               )}
