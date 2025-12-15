@@ -1,8 +1,5 @@
 # Full Stack Event Organiser with Next JS, Tailwind, Mobbin, Shadcn UI and Convex🔥🔥
 
-<img width="1470" height="956" alt="Screenshot 2025-11-14 at 12 34 45 AM" src="https://github.com/user-attachments/public/f7f48cdc-a3bf-40e0-b275-cf690e1bdd48public/2025-12-15 (1).png />
-<img width="1470" height="956" alt="Screenshot 2025-11-14 at 12 34 16 AM" src="https://github.com/user-attachments/public/84f2f663-8d0f-413f-a26f-d3674b5e03c5" />
-
 ### Make sure to create a `.env` file with following variables -
 
 ```
