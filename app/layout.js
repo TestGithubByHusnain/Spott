@@ -8,6 +8,7 @@ import { ConvexClientProvider } from "./convex-client-provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Toaster } from "@/components/ui/sonner";
+import AuthInitializer from "@/components/AuthInitializer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
             }}
           >
             <ConvexClientProvider>
+              <AuthInitializer />
               <Header />
 
               <main className="relative min-h-screen container mx-auto pt-40 md:pt-32">
