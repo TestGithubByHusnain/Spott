@@ -268,7 +268,7 @@ const handleShare = async () => {
                 <p className="text-3xl font-bold">
                   {event.ticketType === "free"
                     ? "Free"
-                    : `₹${event.ticketPrice}`}
+                    : `Rs${event.ticketPrice}`}
                 </p>
 
                 <Separator />
